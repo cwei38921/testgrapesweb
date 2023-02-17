@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>結帳</title>
+</head>
+<body>
+    <!-- 列表 -->
+    <header><nav class="nav-bar">
+        <div class="img-container"><a href="/index.html" class="nav-img"><img src="/image/logo.jpg" alt="" class="nav-img"></a> </div>
+        
+        <div class="select">
+                    <a href="/index.html" class="nav-btn" id="btn-itro">產品介紹</a>
+                    <a href="/plan.html" class="nav-btn" id="btn-plan">選擇商品</a>
+                    <p>結帳</p> 
+         </div>
+        <button class="btn-menu" id="btn-menu"><i class='bx bx-menu'></i></button>
+    </nav></header>
+    <main>
+        <form id="myform" action="http://localhost:3000/order" method="post" name="order">            
+        <div class="order">
+            <label for="" class="item"><p>5斤常溫</p><input type="text"  value="0" name="五斤常溫" id="five1"><p>箱</p></label>
+            <label for="" class="item"><p>20斤常溫</p><input type="text"  value="0" name="20斤常溫" id="twenty1"><p>箱</p></label>
+            <label for="" class="item"><p>5斤冷藏</p><input type="text"  value="0" name="五斤冷藏" id="five2"><p>箱</p></label>
+            <label for="" class="item"><p>20斤冷藏</p><input type="text"  value="0" name="20斤冷藏" id="twenty2"><p>箱</p></label>
+            <label for="" class="item"><p>價格</p><input type="text"  value="0" name="price" id="price"><p>元</p></label>
+    </div>
+        <div class="container">
+        <div class="shopping-data">
+            <div class="shop-imfomation">
+                    <div  class="shop-content">
+                        <label for="name">姓名: <input  required type="text" class="user-data"  id="name" name="name"></label>
+                        <label for="selectaddress">地址: <select name="city" id="selectaddress">
+                            <option>台北市</option>
+                            <option>新北市</option>
+                            <option>桃園市</option>
+                            <option>新竹市</option>
+                            <option>苗栗縣</option>
+                            <option>台中市</option>    
+                        </select>
+                        <input  required type="text" class="user-data"  id="address" name="address"></label>
+                        <label for="tel">電話: <input  required type="tel"  class="user-data"  id="tel" name="tel" maxlength="10"></label>
+                        <label for="date">日期: <input  required type="date" id="date" name="date"></label>
+                    </div>   
+                        <input type="submit" class="submit" id="submit" value="送出訂單">
+                        <input type="reset" class="reset" value="清除資料" id="clear">
+                </form>
+           </div>
+        </div>
+        <div class="notice">
+            <img class="notice-img" src="/image/!!.png" alt="">
+            <p>一律使用黑貓宅急便宅配唷!!!!</p>
+            <p>若地址有誤將會由專員打電話確認!</p>
+            <img src="/image/thx.jpg" alt="" class="thank-mag">
+            <p>感謝支持</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <i class='bx bx-envelope'></i>
+            <span>
+                <span>聯絡我</span>
+                <a href="#">instgram</a> 
+                <a href="#">facebook</a> 
+            </span>
+        </div>
+    </footer>
+    <!-- <script src="/js/index.js" ></script> -->
+    <script src="/js/shop.js"></script>
+</body>
+</html>

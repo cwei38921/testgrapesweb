@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/planstyle.css">
+    <title>選擇商品</title>
+</head>
+<body>
+    <!-- 列表 -->
+    <header><nav class="nav-bar">
+        <div class="img-container"><a href="/index.html" class="nav-img"><img src="/image/logo.jpg" alt="" class="nav-img"></a> </div>
+        <div class="select">
+            <a href="/index.html" class="nav-btn" id="btn-itro">產品介紹</a>
+            <p>選擇商品</p> 
+            <a href="/shop.html" class="nav-btn" id="btn-shop">結帳</a>
+         </div>
+        <button class="btn-menu" id="btn-menu"><i class='bx bx-menu'></i></button>
+    </nav></header>
+    <main>
+        <!--購物車-->
+        <div class="shop-cart">
+            <button id="shop-cart-btn"><i class='bx bx-cart-alt' ></i></button>
+        <div class="shop-cartcontent" id="shop-cartcontent">
+            <div id="five-normal">
+                <img src="/image/logo.jpg" alt="">
+                <p>5斤常溫禮盒</p>
+                <button class="add" id="add-1">+</button>
+                <p class="add-delete-text" id="five-text">0</p>
+                <button class="delete" id="delete-1">-</button>
+                </div>
+                <div id="twenty-normal">
+                <img src="/image/logo.jpg" alt="">
+                <p>20斤常溫禮盒</p>
+                <button class="add" id="add-2">+</button>
+                <p class="add-delete-text" id="twenty-text">0</p>
+                <button class="delete" id="delete-2">-</button>
+                </div>
+                <div id="five-ice">
+                <img src="/image/logo.jpg" alt="">
+                <p>5斤冷藏禮盒</p>
+                <button class="add" id="add-3">+</button>
+                <p class="add-delete-text" id="five-text-ice">0</p>
+                <button class="delete" id="delete-3">-</button>
+                </div>
+                <div id="twenty-ice">
+                <img src="/image/logo.jpg" alt="">
+                <p>20斤冷藏禮盒</p>
+                <button class="add" id="add-4">+</button>
+                <p class="add-delete-text" id="twenty-text-ice">0</p>
+                <button class="delete" id="delete-4">-</button>
+                </div>
+            <div class="total">
+                <p>價格 <span id="total">0</span> 元</p>
+                </div>
+           
+            <button class="buy"><a class="buy" href="/shop.html">結帳</a></button>
+            </div>
+        </div>
+        <h1>選擇商品 每4箱為一組(常溫免運,冷藏運費50)</h1>
+        <h3>EX:買六箱收取兩箱運費(4箱免運)</h3>
+        <div class="add-cart-content">
+        <form action="">
+        <div class="graps-normal">
+            <div class="img-graps">
+            <img id="graps5" src="/image/imggraps.jpg" alt="">
+            <div class="graps-content">
+            <p>5斤常溫禮盒</p>
+            <p>500(+100運費)=600元</p>
+            <label for="graps-count0">數量: <input type="number" class="x" value="0"  min="0" max="3" id="graps-count0"></label>
+            <p>4箱為2000</p>
+            
+            </div>
+            
+        </div>
+        <div class="img-graps">
+            <img id="graps20" src="/image/imggraps.jpg" alt="">
+            <div class="graps-content">
+                <p>20斤常溫禮盒</p>
+                <p>500*4(+0運費)=2000元</p>
+                <label for="graps-count1">數量: <input type="number" class="x" value="0"  min="0" max="15" id="graps-count1"></label>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="graps-ice">
+        <div class="img-graps">
+        <img id="graps5" src="/image/imggraps2.jpg" alt="">
+        <div class="graps-content">
+        <p>5斤冷藏禮盒</p>
+        <p>500(+150運費)=650元</p>
+        <label for="graps-count2">數量: <input type="number" class="x" value="0" min="0" max="3" id="graps-count2"></label>
+        <p>4箱為2050</p>
+        
+
+        </div>
+
+        </div>
+    <div class="img-graps">
+        <img id="graps20" src="/image/imggraps2.jpg" alt="">
+        <div class="graps-content">
+            <p>20斤冷藏禮盒</p>
+            <p>500*4(+50運費)=2050元</p>
+            <label for="graps-count3">數量: <input type="number" class="x" value="0"  min="0" max="15" id="graps-count3"></label>
+            
+
+        </div>
+    </div></form>
+    </div>
+    <div class="addCart"> <input type="button" value="加入購物車" id="add-cart"></div>
+
+</div>
+    </main>  
+    <footer>
+        <div class="footer">
+            <i class='bx bx-envelope'></i>
+            <span>
+                <span>聯絡我</span>
+                <a href="#">instgram</a> 
+                <a href="#">facebook</a> 
+            </span>
+        </div>
+    </footer>    
+    <script src="/js/index.js"></script>
+    </body>
